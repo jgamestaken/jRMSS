@@ -1,6 +1,8 @@
 
 # jRMSS
 
+![badge](https://img.shields.io/badge/This%20project%20runs-Python-green)
+
 jgamestaken **R**eady-to-use **M**ail **S**ending **S**ervice is a program targeted at sending automated emails(e.g. for a company's no-reply). This software is free-to-use, you can copy and adapt it in any way you want, however, you may not sell this software.
 
 jRMSS is supposed to provide others of ease when installing their own mail service- instead of also having to code this!
@@ -138,8 +140,5 @@ The JSON below shows a basic return from this function.
 ## Customizing your .env
 
 The .env file provides you with handy comments you can use to set it up for your own!
-## Badges
-
-![badge](https://img.shields.io/badge/This%20project%20runs-Python-green)
 
 
