@@ -1,0 +1,12 @@
+[Unit]
+Description=jgamestaken Ready-to-use Mail Sending Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/home/jRMSS/
+ExecStart=/home/jRMSS/scripts/run.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

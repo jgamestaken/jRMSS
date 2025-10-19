@@ -1,0 +1,1 @@
+env\Scripts\python.exe app.py # Run the python application using the virtual environment

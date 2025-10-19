@@ -106,10 +106,11 @@ class Mail():
 				ssl_context = ssl.create_default_context() # Create an SSL context for a secure connection
 
 				with smtplib.SMTP(EMAIL_SERVER, EMAIL_PORT) as server: # Connect with the smtp server
+					server.ehlo()
 					server.starttls(context=ssl_context) # Start the SSL/TLS context
 					server.login(EMAIL_ADDRESS, EMAIL_PASSWORD) # Log into the server with the sender email address
-					server.helo()
-					server.send_mail(EMAIL_ADDRESS, self._get_json_property("to", required=True), self.mail.as_string()) # Send mail
+					server.ehlo()
+					server.sendmail(EMAIL_ADDRESS, self._get_json_property("to", required=True), self.mail.as_string()) # Send mail
 
 			except Exception as error: # If an error occurs, notify the user
 				self.mail_deliverable = False
