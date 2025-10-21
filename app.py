@@ -8,7 +8,7 @@
 
 ## HOW TO SEND MAIL
 # * Required option
-# 1. Send a request as a JSON - {to*=str, subject*=str, content*=[{data=str, type="html" OR "text"},...}} @ port 7979(or self-defined)
+# 1. Send a request as a JSON - {to*=str, subject*=str, content*=[{data=str, type="text/html",  "text/plain"...},...}} @ port 7979(or self-defined)
 # 2. Mail will be sent internally
 
 ## HOW TO EDIT VARIABLES
